@@ -1,0 +1,14 @@
+<h1>Lista de Clientes Cadastrados</h1>
+
+
+{{#each cadastros}}
+	ID:{{dataValues.id}}<br>
+	Nome:{{dataValues.nome}}<br>
+	Telefone:{{dataValues.telefone}}<br>
+	Especialidade:{{dataValues.especialidade}}<br>
+	Data:{{#formatDate dataValues.data}} {{/formatDate}}<br>
+	Cadastrado:{{#formatDate dataValues.createdAt}}{{/formatDate}}<br><br>
+	<a href="/del-cliente/{{dataValues.id}}"><button>Apagar</button></a>
+	<hr>
+{{/each}}
+

@@ -1,0 +1,23 @@
+<h1> Fomulário para cadastrar clientes </h1>
+<div> <form action= "/add-cliente" method="POST">
+	<label> Nome: </label>
+	<input type="text" name="nome" placeholder="Digite o Nome Completo">  <br><br>
+    <label> Telefone: </label>
+	<input type="tel" name="telefone" placeholder="Digite um número">  <br><br>
+	<label> Especialidade: </label>
+	<input list="especialidades" name="especialidade"  placeholder="Opções">  
+	<datalist id="especialidades">
+    <option value="Cardiologista">
+    <option value="Oftalmologista">
+    <option value="Otorrino">
+    <option value="Ginecologista">
+    <option value="Urologista">
+  </datalist>
+  	<br><br>
+	<label> Data da Consulta: </label>
+	<input type="datetime-local" name="data" placeholder="Escolha uma data">  <br><br>
+
+	<button type="submit">Cadastrar</button>
+
+	</div>
+</form>
